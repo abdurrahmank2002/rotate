@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate image</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .rotate{
+            width: 600px;
+            height: 281px;
+            margin-top: 10%;
+            margin-left: 25%;
+            border: 12px groove blue;
+            outline-offset: 90px  green;
+            
+        }
+        .image{
+            background-image: url("lap.jpg");
+        height: 100%;
+        width: 100%; 
+        background-position: center;
+        background-repeat:repeat-x;
+        background-size: cover;
+        transition: .7s ease-in-out;
+        }
+        .image:hover{
+            transform:rotate(360deg) scale(4.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="rotate">
+        <div class="image">
+                
+        </div>
+    </div>
+</body>
+</html>
